@@ -1,0 +1,66 @@
+/* ===== ROOT VARIABLES ===== */
+:root {
+  --color-primary: #2EE6D6;
+
+  --font-heading: 'Bebas Neue', sans-serif;
+  --font-body: 'Outfit', sans-serif;
+}
+
+
+/* ===== CSS RESET ===== */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* ===== HTML / BODY BASE ===== */
+html {
+  scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+    background: #020A0C;
+}
+
+
+
+/* ===== MEDIA DEFAULT ===== */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+
+/* ===== FORM ELEMENTS ===== */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+/* ===== LINK RESET ===== */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* ===== LIST RESET ===== */
+ul,
+ol {
+  list-style: none;
+}

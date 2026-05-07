@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ===== META ===== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ===== SEO ===== -->
+    <title>Ankit Badoni Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Ankit Badoni - Web Developer specializing in modern, responsive websites." />
+    <meta name="keywords" content="Ankit Badoni, Web Developer, Portfolio, HTML, CSS, JavaScript" />
+    <meta name="author" content="Ankit Badoni" />
+
+
+    <!-- ✅ GOOGLE FONTS (FIRST) -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- ===== FAVICON ===== -->
+    <link rel="icon" href="/svg/Fevicon.svg" type="image/svg+xml" />
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="/css/main.css">
+    
+</head>
+
+<body>
+
+    <section class="hero" id="hero">
+
+        <div class="tech-bubbles">
+            <div class="tech-bubble html"></div>
+            <div class="tech-bubble css"></div>
+            <div class="tech-bubble js"></div>
+        </div>
+        <span class="hero_glass"></span>
+
+        <!-- TOP MENU BUTTON -->
+        <div class="hero_top">
+            <button type="button" class="btn" id="menu">MENU</button>
+        </div>
+
+
+        <!-- NAVBAR -->
+        <nav class="navbar" id="navbar">
+            <div class="nav-track">
+
+                <a href="#about" class="nav-item" data-name="ABOUT">
+                    <img src="/svg/about.svg" alt="About">
+                </a>
+
+                <a href="#skills" class="nav-item" data-name="SKILLS">
+                    <img src="/svg/ski.svg" alt="Skills">
+                </a>
+
+                <a href="#hero" class="nav-item" data-name="HOME">
+                    <img src="/svg/home.svg" alt="Home">
+                </a>
+
+                <a href="#projects" class="nav-item" data-name="PROJECT">
+                    <img src="/svg/project.svg" alt="Projects">
+                </a>
+
+                <a href="#contact" class="nav-item" data-name="CONTACT">
+                    <img src="/svg/contact.svg" alt="Contact">
+                </a>
+
+            </div>
+        </nav>
+
+        <div class="hero_container">
+            <div class="hero_content">
+                <p class="hero_subtitle">ankit badoni</p>
+
+                <h1 class="hero_title">PORTFOLIO</h1>
+
+                <div class="hero_meta">
+
+                    <p class="hero_role">
+                        web <span class="typing-wrap">
+                            <span id="typing-role"></span><span class="caret"></span>
+                        </span>
+                    </p>
+
+                    <span class="hero_hash">
+                        <img src="/images/hash.png" alt="hash icon">
+                    </span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="hero_bottom">
+            <button type="button" class="btn" id="cvBtn">
+                DOWNLOAD CV <span id="cvIcon">↓</span>
+            </button>
+        </div>
+
+    </section>
+
+    <script type="module" src="/js/main.js"></script>
+</body>
+
+</html>
