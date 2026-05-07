@@ -74,17 +74,17 @@
 }
 
 .tech-bubble.html::after {
-  background-image: url("svg/html.svg");
+  background-image: url("../svg/html.svg");
   background-size: 70%;
 }
 
 .tech-bubble.css::after {
-  background-image: url("svg/css.svg");
+  background-image: url("../svg/css.svg");
    background-size: 70%;
 }
 
 .tech-bubble.js::after {
-  background-image: url("/svg/js.svg");
+  background-image: url("../svg/js.svg");
    background-size: 60%;
 }
 
