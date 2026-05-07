@@ -84,7 +84,7 @@
 }
 
 .tech-bubble.js::after {
-  background-image: url("svg/js.svg");
+  background-image: url("/svg/js.svg");
    background-size: 60%;
 }
 
