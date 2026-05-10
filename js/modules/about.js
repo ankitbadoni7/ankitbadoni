@@ -101,7 +101,7 @@ const aboutSection = document.querySelector(".about");
 
 function toggleCapsuleVisibility() {
 
-    const triggerPoint = aboutSection.offsetTop - 150;
+    const triggerPoint = aboutSection.offsetTop - 40;
 
     if (window.scrollY >= triggerPoint) {
 
@@ -149,13 +149,21 @@ capsule.addEventListener("click", () => {
    OUTSIDE CLICK RESET
 ========================================================= */
 
+/* outside click */
 document.addEventListener("click", (e) => {
 
-    if (!capsule.contains(e.target)) {
+    const insideCapsule = capsule.contains(e.target);
+    const insideCard = capsuleCard.contains(e.target);
+
+    /* only outside both */
+    if (!insideCapsule && !insideCard) {
 
         capsule.classList.remove("active");
+
+        capsuleCard.classList.remove("show");
     }
 });
+
 const experienceBtn = document.getElementById("openExperience");
 
 experienceBtn.addEventListener("click", () => {
@@ -170,6 +178,54 @@ socialIcons.forEach((icon) => {
     icon.addEventListener("click", () => {
 
         capsule.classList.remove("active");
+    });
+
+});
+
+
+const capsuleCard = document.querySelector(".capsule_card");
+
+
+/* card toggle */
+capsule.addEventListener("click", () => {
+
+    capsuleCard.classList.toggle("show");
+});
+
+
+/* outside click */
+document.addEventListener("click", (e) => {
+
+    const insideCapsule = capsule.contains(e.target);
+    const insideCard = capsuleCard.contains(e.target);
+
+    if (!insideCapsule && !insideCard) {
+
+        capsuleCard.classList.remove("show");
+    }
+});
+
+
+/* scroll hide */
+window.addEventListener("scroll", () => {
+
+    capsuleCard.classList.remove("show");
+});
+
+
+/* experience click hide */
+experienceBtn.addEventListener("click", () => {
+
+    capsuleCard.classList.remove("show");
+});
+
+
+/* social click hide */
+socialIcons.forEach((icon) => {
+
+    icon.addEventListener("click", () => {
+
+        capsuleCard.classList.remove("show");
     });
 
 });
