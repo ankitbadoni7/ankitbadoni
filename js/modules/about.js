@@ -89,3 +89,87 @@ document.addEventListener("DOMContentLoaded", () => {
     }, { passive: true });
 
 });
+
+
+const capsule = document.querySelector(".capsule");
+const aboutSection = document.querySelector(".about");
+
+
+/* =========================================================
+   SHOW / HIDE CAPSULE
+========================================================= */
+
+function toggleCapsuleVisibility() {
+
+    const triggerPoint = aboutSection.offsetTop - 150;
+
+    if (window.scrollY >= triggerPoint) {
+
+        capsule.classList.add("show");
+
+    } else {
+
+        capsule.classList.remove("show");
+        capsule.classList.remove("active");
+    }
+}
+
+
+/* =========================================================
+   INITIAL CHECK
+========================================================= */
+
+window.addEventListener("load", () => {
+
+    toggleCapsuleVisibility();
+});
+
+
+/* =========================================================
+   SCROLL CHECK
+========================================================= */
+
+window.addEventListener("scroll", () => {
+
+    toggleCapsuleVisibility();
+});
+
+
+/* =========================================================
+   CAPSULE CLICK
+========================================================= */
+
+capsule.addEventListener("click", () => {
+
+    capsule.classList.toggle("active");
+});
+
+
+/* =========================================================
+   OUTSIDE CLICK RESET
+========================================================= */
+
+document.addEventListener("click", (e) => {
+
+    if (!capsule.contains(e.target)) {
+
+        capsule.classList.remove("active");
+    }
+});
+const experienceBtn = document.getElementById("openExperience");
+
+experienceBtn.addEventListener("click", () => {
+
+    capsule.classList.remove("active");
+});
+
+const socialIcons = document.querySelectorAll(".social_icon");
+
+socialIcons.forEach((icon) => {
+
+    icon.addEventListener("click", () => {
+
+        capsule.classList.remove("active");
+    });
+
+});
