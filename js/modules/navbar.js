@@ -80,3 +80,8 @@ items.forEach(item => {
 
     item.addEventListener("mouseleave", resetLight);
 });
+// Hide navbar on scroll
+window.addEventListener("scroll", () => {
+    navbar.classList.remove("active");
+    resetLight();
+});

@@ -11,11 +11,11 @@
   border-radius: 0 0 80px 80px;
   border: 1px solid rgba(0, 255, 255, 0.516);
     box-shadow: 
-        0 0 40px rgba(46, 230, 215, 0.781),
-        0 0 80px rgba(46, 230, 215, 0.13),
+
         inset 0 0 60px rgba(46, 230, 215, 0.082);
 
     }
+    
 .hero::after {
   content: "";
   position: absolute;
@@ -87,9 +87,6 @@
   background-image: url("../svg/js.svg");
    background-size: 60%;
 }
-
-
-
 
 .tech-bubble.html {
   top: 10%;
