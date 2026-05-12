@@ -4,6 +4,7 @@ import "./modules/bubbles.js";
 import "./modules/navbar.js";
 import "./modules/download.js";
 import "./modules/about.js";
+import "./modules/project.js";
 
 const sections = document.querySelectorAll("section");
 const navItems = document.querySelectorAll(".capsule_item");
