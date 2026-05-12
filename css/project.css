@@ -132,25 +132,25 @@
 
 /* ===== INTERACTION TEXT ===== */
 
-.project_mockup::after{
+.laptop_screen::after{
     content: "CLICK TO SCROLL";
 
     position: absolute;
 
-    left: 50%;
-    bottom: 100px;
+    left: 22%;
+    bottom: 50px;
 
     transform: translateX(-50%);
 
-    padding: 6px 18px;
+    padding: 4px 12px;
 
     border-radius: 30px;
 
     background: rgba(0,0,0,0.7);
 
-    border: 1px solid rgba(0,210,255,0.5);
+    border: 1px solid rgba(0,210,255,1);
 
-    color: white;
+    color:white;
 
     font-size: 11px;
     letter-spacing: 3px;
@@ -167,7 +167,7 @@
 
 /* ===== SHOW ON HOVER ===== */
 
-.project_mockup:hover::after{
+.laptop_screen:hover::after{
     opacity: 1;
 }
 
@@ -176,11 +176,9 @@
 
 .laptop_screen{
     position: absolute;
-
     top: 9%;
     left: 15%;
-
-    width: 68%;
+    width: 69%;
     height: 70%;
 
     border-radius: 10px;
@@ -202,19 +200,15 @@
 
 .laptop_screen iframe{
 
-    width: 142%;
-    height: 325px;
-
+    width: 205%;
+    height: 600px;
     border: none;
-
     background: #000;
-
-    transform: scale(0.72);
+    transform: scale(0.5);
     transform-origin: top left;
-
     pointer-events: none;
-
     display: block;
+    
 }
 
 
@@ -224,8 +218,8 @@
 .fake_scrollbar{
     position: absolute;
 
-    top: 12px;
-    right: 1px;
+    top: 1px;
+    right: 0;
 
     width: 6px;
     height: calc(100% - 24px);
