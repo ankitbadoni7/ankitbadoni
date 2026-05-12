@@ -124,7 +124,6 @@ window.addEventListener("load", () => {
     toggleCapsuleVisibility();
 });
 
-
 /* =========================================================
    SCROLL CHECK
 ========================================================= */
@@ -132,6 +131,10 @@ window.addEventListener("load", () => {
 window.addEventListener("scroll", () => {
 
     toggleCapsuleVisibility();
+
+    /* auto reset on scroll */
+    capsule.classList.remove("active");
+    capsuleCard.classList.remove("show");
 });
 
 
@@ -209,6 +212,7 @@ document.addEventListener("click", (e) => {
 /* scroll hide */
 window.addEventListener("scroll", () => {
 
+    capsule.classList.remove("active");
     capsuleCard.classList.remove("show");
 });
 
@@ -216,6 +220,7 @@ window.addEventListener("scroll", () => {
 /* experience click hide */
 experienceBtn.addEventListener("click", () => {
 
+    capsule.classList.remove("active");
     capsuleCard.classList.remove("show");
 });
 
@@ -225,6 +230,7 @@ socialIcons.forEach((icon) => {
 
     icon.addEventListener("click", () => {
 
+        capsule.classList.remove("active");
         capsuleCard.classList.remove("show");
     });
 
