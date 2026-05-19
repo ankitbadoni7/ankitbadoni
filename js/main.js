@@ -5,6 +5,7 @@ import "./modules/navbar.js";
 import "./modules/download.js";
 import "./modules/about.js";
 import "./modules/project.js";
+import "./modules/contact.js";
 
 
 //capsule active state on scroll
