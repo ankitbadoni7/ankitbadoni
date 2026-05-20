@@ -4,8 +4,8 @@
 
 .contact_section{
     width: 100%;
-    min-height: 100vh;
-
+    max-height: 100vh;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,7 +23,10 @@
     #020A0C 100%
     );
     border-top: 1px solid rgba(0, 255, 255, 0.28);
-
+    box-shadow:
+    0 5px 30px rgba(0,0,0,1);
+    z-index: 1;
+    border-radius: 0 0 20px 20px;
    
 }
 
@@ -39,8 +42,6 @@
 
     pointer-events: none;
 }
-
-/* ===== MAIN CONTAINER ===== */
 
 
 /* ===== BACKGROUND TEXT ===== */
@@ -327,4 +328,345 @@
 
 .contact_datetime p{
     margin: 0;
+}
+
+
+/* =========================================
+   THANKS SECTION
+========================================= */
+
+.thanks_section{
+    margin-top: -20px;
+    width: 100%;
+    max-height: 170px;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 90px 20px 60px;
+  background: radial-gradient(
+    circle at center,
+    rgba(46, 230, 214, 0.4) 0%,
+    rgba(46, 230, 214, 0.3) 25%,
+    rgba(46, 230, 214, 0.1) 50%,
+    rgba(46, 230, 214, 0.05) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
+
+border-top: 1px solid rgba(0,255,255,0.12);
+}
+
+
+/* ===== NOISE ===== */
+
+.thanks_section::before{
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background-image: url("../images/noise.webp");
+    background-size: cover;
+
+    opacity: 0.1;
+
+    mix-blend-mode: overlay;
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   HOME BUTTON
+========================================= */
+
+.home_btn{
+    width: 50px;
+    height: 50px;
+
+   position: absolute;
+    top: 70px;
+    right: 50px;
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-shrink: 0;
+
+    margin-bottom: 15px;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.04);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    outline: 1px solid transparent;
+
+    overflow: hidden;
+
+    transition:
+    transform 0.4s ease,
+    border-color 0.4s ease,
+    background 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+
+/* =========================================
+   GLOW LAYER
+========================================= */
+
+.home_btn::before{
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    border-radius: inherit;
+
+    background:
+    radial-gradient(circle at top,
+    rgba(0,255,255,0.18),
+    transparent 70%);
+
+    opacity: 0;
+
+    transition: opacity 0.4s ease;
+}
+
+
+/* =========================================
+   SHINE EFFECT
+========================================= */
+
+.home_btn::after{
+    content: "";
+
+    position: absolute;
+
+    top: -120%;
+    left: -40%;
+
+    width: 45%;
+    height: 300%;
+
+    background:
+    linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,0.35),
+        transparent
+    );
+
+    transform: rotate(25deg);
+
+    opacity: 0;
+
+    transition:
+    left 0.7s ease,
+    opacity 0.3s ease;
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.home_btn:hover{
+    transform: translateY(-6px);
+
+    border-color: rgba(0,255,255,0.35);
+
+    background: rgba(255,255,255,0.07);
+
+    box-shadow:
+    0 0 25px rgba(0,255,255,0.14),
+    inset 0 0 20px rgba(255,255,255,0.03);
+}
+
+
+.home_btn:hover::before{
+    opacity: 1;
+}
+
+
+.home_btn:hover::after{
+    left: 130%;
+    opacity: 1;
+}
+
+
+/* =========================================
+   ACTIVE
+========================================= */
+
+.home_btn:active{
+    transform: scale(0.95);
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.home_btn img{
+    width: 22px;
+
+    position: relative;
+    z-index: 2;
+
+    opacity: 0.82;
+
+    transition:
+    transform 0.4s ease,
+    opacity 0.4s ease;
+}
+
+
+.home_btn:hover img{
+    transform: scale(1.08);
+
+    opacity: 1;
+}
+
+/* =========================================
+   BIG TEXT
+========================================= */
+
+.thanks_text{
+    position: relative;
+    z-index: 2;
+    font-weight: 300;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-size: 4rem;
+
+    text-transform: uppercase;
+    letter-spacing: 20px;
+
+    color: rgba(255, 255, 255, 0.4);
+
+    text-align: center;
+
+    line-height: 1;
+
+    text-shadow:
+    0 0 12px rgba(16, 16, 16, 0.979);
+
+}
+
+
+
+/* =========================================
+   COPYRIGHT
+========================================= */
+
+.copyright{
+    position: relative;
+    z-index: 2;
+    margin-top: 14px;
+    font-size: 1rem;
+    letter-spacing: 4px;
+    color: rgba(255,255,255,0.3);
+    text-align: center;
+}
+
+/* =========================================
+   GLASS RECTANGLE
+========================================= */
+
+.glass_rect{
+    position: absolute;
+
+    top: 80px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 70%;
+    height: 40px;
+
+    border-radius: 100px;
+
+    background: rgba(255,255,255,0.037);
+
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    box-shadow:
+    0 0 7px rgba(0,0,0,1);
+
+    z-index: 10;
+
+    overflow: hidden;
+
+    cursor: grab;
+}
+
+
+/* =========================================
+   REAL GLASS SHINE
+========================================= */
+
+.glass_rect::before{
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -150%;
+
+    width: 60%;
+    height: 100%;
+
+    background:
+    linear-gradient(
+        120deg,
+        transparent 0%,
+        rgba(255,255,255,0.15) 40%,
+        rgba(255,255,255,0.6) 50%,
+        rgba(255,255,255,0.15) 60%,
+        transparent 100%
+    );
+
+    filter: blur(6px);
+
+    transform: skewX(-20deg);
+
+    animation: glassShine 4s linear infinite;
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   SHINE LOOP
+========================================= */
+
+@keyframes glassShine{
+
+    0%{
+        left: -150%;
+    }
+
+    100%{
+        left: 150%;
+    }
+}
+
+
+/* =========================================
+   ACTIVE
+========================================= */
+
+.glass_rect:active{
+    cursor: grabbing;
 }

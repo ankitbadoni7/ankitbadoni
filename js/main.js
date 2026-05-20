@@ -7,6 +7,13 @@ import "./modules/about.js";
 import "./modules/project.js";
 import "./modules/contact.js";
 
+// ===== DOWNLOAD CV BUTTON =====
+const cvBtn = document.getElementById("cvBtn");
+
+cvBtn.addEventListener("click", () => {
+    window.open("doc/ankit_badoni_resume.pdf", "_blank");
+});
+
 
 //capsule active state on scroll
 const sections = document.querySelectorAll("section");
