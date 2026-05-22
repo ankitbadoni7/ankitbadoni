@@ -483,3 +483,140 @@
   opacity: 0.5; 
 }
   */
+
+  @media (max-width: 1200px){
+
+    .hero_title{
+        font-size: 15rem;
+    }
+
+    .hero_glass{
+        left: 50%;
+        transform: translateX(-50%);
+        width: 42%;
+    }
+
+    .hero_subtitle{
+        left: 90px;
+        font-size: 2.5rem;
+        
+       
+    }
+
+    .hero_role{
+        font-size: clamp(2rem, 2.5vw, 4rem);
+        
+      
+    }
+
+    .hero_meta{
+        right: 60px;
+  
+    }
+
+    .navbar{
+        width: 420px;
+    }
+}
+
+
+
+@media (max-width: 1000px){
+
+    .hero{
+        border-radius: 0 0 50px 50px;
+    }
+
+    .hero_content{
+        transform: translateY(0);
+    }
+
+    .hero_title{
+        line-height: 1.1;
+               font-size: clamp(3.9rem, 16vw, 20rem);
+        letter-spacing: clamp(2px, 0.4vw, 5px);
+
+    }
+
+    .hero_subtitle{
+        position: static;
+          font-size: clamp(1.4rem, 2.5vw, 3rem);
+        margin-bottom: clamp(0.8rem, 1.5vw, 1.5rem);
+        text-align: center;
+    }
+
+    .hero_meta{
+        position: static;
+        margin-top: 2rem;
+        align-items: center;
+    }
+
+    .hero_role{
+         font-size: clamp(1.4rem, 2.5vw, 3rem);
+        margin-bottom: clamp(1rem, 1.5vw, 1.5rem);
+    }
+
+    .hero_glass{
+       width: clamp(80%, 50vw, 85%);
+        height: clamp(74px, 7vw, 95px);
+        top:36%;
+        z-index: 1;
+        left: 50%;
+        transform: translateX(-50%);
+
+
+    }
+
+    .navbar{
+         max-width: clamp(300px, 40vw, 500px);
+        height: clamp(46px, 5vw, 55px);
+        top: clamp(75px, 8vw, 90px);
+    }
+
+    .nav-track{
+        gap: clamp(20px, 2vw, 30px);
+    }
+
+    .nav-item{
+         width: clamp(34px, 4vw, 55px);
+        height: clamp(34px, 4vw, 55px);
+    }
+
+     .hero_bottom{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        bottom: clamp(20px, 3vw, 40px);
+    }
+
+    .hero_bottom .btn{
+        width: fit-content;
+    }
+}
+
+
+
+@media(min-width:540px) and (max-width:1000px) {
+  .hero_glass{
+       width: clamp(60%, 50vw, 85%);
+        height: clamp(30px, 6vw, 95px);
+        top:40%;
+        z-index: 2;
+        left: 50%;
+        transform: translateX(-50%);
+
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

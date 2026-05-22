@@ -1,0 +1,296 @@
+
+  @media (max-width: 1200px){
+
+    .hero_title{
+        font-size: 15rem;
+    }
+
+    .hero_glass{
+        left: 50%;
+        transform: translateX(-50%);
+        width: 42%;
+    }
+
+    .hero_subtitle{
+        left: 90px;
+        font-size: 2.5rem;
+    }
+
+    .hero_role{
+        font-size: 2.5rem;
+    }
+
+    .hero_meta{
+        right: 60px;
+    }
+
+    .navbar{
+        width: 420px;
+    }
+}
+
+
+
+@media (max-width: 992px){
+
+    .hero{
+        border-radius: 0 0 50px 50px;
+    }
+
+    .hero_content{
+        transform: translateY(0);
+    }
+
+    .hero_title{
+        font-size: 11rem;
+        line-height: 1.1;
+        letter-spacing: 3px;
+    }
+
+    .hero_subtitle{
+        position: static;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .hero_meta{
+        position: static;
+        margin-top: 1rem;
+        align-items: center;
+    }
+
+    .hero_role{
+        font-size: 2rem;
+    }
+
+    .hero_glass{
+        top: 50%;
+        width: 52%;
+        height: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .navbar{
+        width: 380px;
+        height: 52px;
+    }
+
+    .nav-track{
+        gap: 22px;
+    }
+
+    .nav-item{
+        width: 48px;
+        height: 48px;
+    }
+
+    .hero_bottom{
+        bottom: 30px;
+    }
+}
+
+
+
+@media (max-width: 768px){
+
+    .hero{
+        min-height: 100svh;
+        border-radius: 0 0 35px 35px;
+        padding-inline: 1rem;
+    }
+
+    .hero_title{
+        font-size: 7rem;
+        letter-spacing: 2px;
+    }
+
+    .hero_subtitle{
+        font-size: 1.4rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .hero_role{
+        font-size: 1.5rem;
+    }
+
+    .hero_glass{
+        width: 58%;
+        height: 52px;
+        top: 48%;
+    }
+
+    .hero_top{
+        top: 20px;
+    }
+
+    .hero_bottom{
+        bottom: 25px;
+    }
+
+    .navbar{
+        top: 80px;
+        width: 330px;
+        height: 50px;
+        border-radius: 18px;
+    }
+
+    .nav-track{
+        gap: 16px;
+    }
+
+    .nav-item{
+        width: 42px;
+        height: 42px;
+    }
+
+    .nav-item img{
+        width: 20px;
+    }
+
+    .nav-item::after{
+        font-size: 10px;
+        bottom: -34px;
+    }
+
+    .tech-bubble{
+        width: 55px;
+        height: 55px;
+    }
+}
+
+
+
+@media (max-width: 576px){
+
+    .hero{
+        border-radius: 0 0 28px 28px;
+    }
+
+    .hero_title{
+        font-size: 4.5rem;
+        line-height: 1;
+    }
+
+    .hero_subtitle{
+        font-size: 1rem;
+        letter-spacing: 0.5px;
+    }
+
+    .hero_role{
+        font-size: 1.1rem;
+    }
+
+    .hero_glass{
+        width: 72%;
+        height: 44px;
+        top: 49%;
+        border-radius: 50px;
+    }
+
+    .hero_glass::after{
+        font-size: 0.65rem;
+    }
+
+    .navbar{
+        width: calc(100% - 2rem);
+        max-width: 300px;
+        height: 48px;
+        top: 75px;
+    }
+
+    .nav-track{
+        gap: 10px;
+    }
+
+    .nav-item{
+        width: 38px;
+        height: 38px;
+    }
+
+    .nav-item img{
+        width: 18px;
+    }
+
+    .hero_bottom{
+        width: 100%;
+        padding-inline: 1rem;
+    }
+
+    .hero_bottom .btn{
+        width: 100%;
+    }
+
+    .tech-bubble{
+        opacity: 0.6;
+    }
+}
+
+
+
+@media (max-width: 400px){
+
+    .hero_title{
+        font-size: 3.9rem;
+        letter-spacing: 4px;
+    }
+
+    .hero_subtitle{
+        font-size: 1.4rem;
+          margin-bottom: 1.5rem;
+    }
+
+    .hero_role{
+        font-size: 1.4rem;
+          margin-bottom: 1.5rem;
+    }
+
+    .hero_glass{
+        width: 85%;
+        height: 75px;
+        top: 37%;
+        z-index: 1;
+    }
+
+    .navbar{
+        max-width: 270px;
+        height: 46px;
+        top: 90px;
+    }
+
+    .nav-track{
+        gap: 20px;
+    }
+
+    .nav-item{
+        width: 34px;
+        height: 34px;
+    }
+
+    .nav-item img{
+        width: 16px;
+    }
+
+    .nav-item::after{
+        display: none;
+    }
+     .nav-item::before{
+        display: none;
+    }
+
+  
+
+.hero_bottom{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 40px;
+}
+
+.hero_bottom .btn{
+    width: fit-content;
+}
+
+ 
+}
