@@ -825,3 +825,268 @@ background-size: 120px 120px;
     border: 1px solid rgba(84, 225, 238, 0.5);
     color: #ffffff;
 }
+
+@media (min-width:1000px) and (max-width:1300px){
+    .about{
+        padding: 0 20px 0;
+    }
+
+    /* container stays row */
+    .about_container{
+        align-items: flex-end;
+        gap: 20px;
+    }
+
+    /* LEFT side compress */
+    .about_left{
+        width: 52%;
+        padding-bottom: 60px;
+    }
+
+    .about_title{
+        font-size: 2.4rem;
+        letter-spacing: 4px;
+    }
+
+    .about_text p{
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .about_footer{
+        gap: 30px;
+    }
+
+    .social_icon{
+        width: 48px;
+        height: 48px;
+    }
+
+    .social_icon img{
+        width: 22px;
+        height: 22px;
+    }
+
+    /* RIGHT side slightly adjust */
+    .about_right{
+        right: 6vw;
+    }
+
+    .about_glass_bg{
+        width: 280px;
+        height: 78vh;
+    }
+
+    .about_image_wrap{
+        height: 75vh;
+    }
+
+}
+
+@media (max-width:1000px){
+
+    .about{
+        max-height: none;
+        padding: 40px 20px 0;
+        
+    }
+
+    .about_container{
+
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: center;
+
+        gap: 40px;
+    }
+
+    .about_left{
+        width: 100%;
+
+        padding-bottom: 0;
+
+    }
+
+    .about_text{
+        padding-bottom: 0;
+    }
+
+    .about_title{
+        font-size: clamp(2rem, 5vw, 3rem);
+
+        text-align: center;
+
+        margin-bottom: 20px;
+    }
+
+    .about_text p{
+        font-size: clamp(0.95rem, 1.7vw, 1rem);
+
+        line-height: 1.5;
+        margin-top: 0;
+    }
+
+    .about_footer{
+        flex-direction: column;
+
+        align-items: center;
+
+        justify-content: center;
+
+        gap: 30px;
+
+        margin-top: 35px;
+    }
+
+    .about_socials{
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 20px;
+    }
+
+    .social_icon{
+        width: 50px;
+        height: 50px;
+    }
+
+    .social_icon img{
+        width: 24px;
+        height: 24px;
+    }
+
+    .about_btn{
+        transform: none;
+    }
+
+    .about_right{
+        position: relative;
+
+        right: auto;
+
+        bottom: auto;
+
+        width: 100%;
+
+        height: auto;
+
+        justify-content: center;
+
+       
+    }
+
+    .about_glass_bg{
+        right: auto;
+
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        width: clamp(250px, 60vw, 400px);
+
+        height: clamp(320px, 65vw, 750px);
+    }
+
+    .about_image_wrap{
+        height: clamp(310px, 65vw, 600px);
+
+        justify-content: center;
+    }
+    .about_right,
+    .about_image_wrap,
+    .about_glass_bg,
+    .about_bottom_glass{
+        z-index: 1;
+    }
+    .about_image_wrap img{
+        height: 100%;
+        width: auto;
+    }
+
+    .about_bottom_glass{
+        height: 35px;
+    }
+
+    .glass_marquee_track span{
+        font-size: clamp(1.2rem, 3vw, 2rem);
+
+        letter-spacing: 6px;
+
+        padding-right: 60px;
+    }
+
+    
+   .exp_card{
+
+        position: fixed;
+
+        top: 48%;
+        left: 50%;
+
+        transform: translate(-50%, -50%) scale(0.95);
+
+        width: min(90%, 650px);
+        min-height: clamp(450px, 65vh, 500px);
+        z-index: 999;
+
+    }
+
+    .exp_card.active{
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    .exp_header{
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .exp_logo img{
+        max-width: 140px;
+    }
+
+    .exp_title{
+        font-size: clamp(1.5rem, 4vw, 2rem);
+    }
+
+    .exp_info h3{
+        font-size: clamp(1rem, 2vw, 1.3rem);
+    }
+
+    .exp_info h4,
+    .exp_info .exp_date{
+        font-size: clamp(0.9rem, 1.8vw, 1rem);
+    }
+
+    .exp_list li{
+        font-size: clamp(0.9rem, 1.7vw, 1rem);
+    }
+        .capsule{
+            top: clamp(20px, 2vw, 80px);
+            right: clamp(12px, 3vw, 50px);
+
+            width: clamp(58px, 6vw, 75px);
+
+            height: clamp(36px, 4vw, 45px);
+
+            border-radius: clamp(30px, 5vw, 50px);
+        }
+
+        .capsule img{
+
+            width: clamp(20px, 2.5vw, 28px);
+
+            height: clamp(20px, 2.5vw, 28px);
+        }
+.capsule_card{
+    top: clamp(65px, 7vw, 120px);
+    right: clamp(12px, 3vw, 50px);
+
+    width: clamp(160px, 18vw, 180px);
+}
+}
