@@ -339,9 +339,9 @@
 
 .hero_glass {
   position: absolute;
-  top: 45%;
-  left:190px;
-  width: 36%;
+  top: 38%;
+  left:50px;
+  width: 42%;
   height: 70px;
   transform: none;
   border-radius: 100px;
@@ -353,7 +353,6 @@
   cursor: grab;
   z-index: 10;
   pointer-events: auto;
-
   overflow: hidden;
 }
 
@@ -556,18 +555,24 @@
         margin-bottom: clamp(1rem, 1.5vw, 1.5rem);
     }
 
-    .hero_glass{
-    width: clamp(80%, 50vw, 85%);
-    height: clamp(74px, 7vw, 95px);
+        .hero_glass{
+          z-index: -1;
+        left: 50%;
+        top: 30%;
 
-    left: 50%;
+        transform: translate(-50%, -50%);
 
-    top: clamp(215px, 36vw, 320px);
+        width: clamp(80%, 50vw, 85%);
+        height: clamp(65px, 7vw, 95px);
 
-    transform: translateX(-50%);
+        cursor: default;
 
-    z-index: 1;
-}
+        pointer-events: none;
+    }
+
+    .hero_glass::after{
+        display: none;
+    }
 
     .navbar{
          max-width: clamp(300px, 40vw, 500px);

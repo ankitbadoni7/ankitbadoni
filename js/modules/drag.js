@@ -1,53 +1,54 @@
-// =====================
-// DRAG - HERO GLASS
-// =====================
+/// DRAG - HERO GLASS
+const heroGlass = document.querySelector(".hero_glass");
+const heroContent = document.querySelector(".hero_content");
 
-const heroGlass = document.querySelector('.hero_glass');
-const heroSection = document.querySelector('.hero');
+let isDragging = false;
 
-let isHeroDragging = false;
-
-let heroShiftX = 0;
-let heroShiftY = 0;
+let offsetX = 0;
+let offsetY = 0;
 
 
-heroGlass.addEventListener('mousedown', (e) => {
+heroGlass.addEventListener("mousedown", (e) => {
 
     e.preventDefault();
 
-    isHeroDragging = true;
+    isDragging = true;
 
     const rect = heroGlass.getBoundingClientRect();
+    const parentRect = heroContent.getBoundingClientRect();
 
-    heroShiftX = e.clientX - rect.left;
-    heroShiftY = e.clientY - rect.top;
+    offsetX = e.clientX - rect.left;
+    offsetY = e.clientY - rect.top;
 
-    document.body.style.cursor = 'grabbing';
-});
-
-
-document.addEventListener('mousemove', (e) => {
-
-    if(!isHeroDragging) return;
-
-    const heroRect =
-    heroSection.getBoundingClientRect();
+    heroGlass.style.transform = "none";
 
     heroGlass.style.left =
-    (e.clientX - heroRect.left - heroShiftX) + 'px';
+        (rect.left - parentRect.left) + "px";
 
     heroGlass.style.top =
-    (e.clientY - heroRect.top - heroShiftY) + 'px';
+        (rect.top - parentRect.top) + "px";
 });
 
 
-document.addEventListener('mouseup', () => {
+document.addEventListener("mousemove", (e) => {
 
-    isHeroDragging = false;
+    if(!isDragging) return;
 
-    document.body.style.cursor = 'default';
+    const parentRect =
+        heroContent.getBoundingClientRect();
+
+    heroGlass.style.left =
+        (e.clientX - parentRect.left - offsetX) + "px";
+
+    heroGlass.style.top =
+        (e.clientY - parentRect.top - offsetY) + "px";
 });
 
+
+document.addEventListener("mouseup", () => {
+
+    isDragging = false;
+});
 
 
 /* =========================================
