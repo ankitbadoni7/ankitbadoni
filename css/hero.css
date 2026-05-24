@@ -557,15 +557,17 @@
     }
 
     .hero_glass{
-       width: clamp(80%, 50vw, 85%);
-        height: clamp(74px, 7vw, 95px);
-        top:36%;
-        z-index: 1;
-        left: 50%;
-        transform: translateX(-50%);
+    width: clamp(80%, 50vw, 85%);
+    height: clamp(74px, 7vw, 95px);
 
+    left: 50%;
 
-    }
+    top: clamp(215px, 36vw, 320px);
+
+    transform: translateX(-50%);
+
+    z-index: 1;
+}
 
     .navbar{
          max-width: clamp(300px, 40vw, 500px);
@@ -580,6 +582,9 @@
     .nav-item{
          width: clamp(34px, 4vw, 55px);
         height: clamp(34px, 4vw, 55px);
+    }
+    .nav-item::before{
+      display: none;
     }
 
      .hero_bottom{
