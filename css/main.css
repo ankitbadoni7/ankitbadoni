@@ -109,3 +109,12 @@
         transform: translateX(-50%) scale(0.8);
     }
 }
+
+@media (max-width: 1000px){
+
+    .mini_div .signal_track:first-child,
+    .mini_div .signal_track:last-child{
+        display: none;
+    }
+
+}

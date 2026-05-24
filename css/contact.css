@@ -669,3 +669,181 @@ border-top: 1px solid rgba(0,255,255,0.12);
 .glass_rect:active{
     cursor: grabbing;
 }
+
+
+
+/* =========================================
+   CONTACT RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px){
+
+    .contact_section{
+        max-height: none;
+
+        padding: 70px 0 50px;
+    }
+
+    /* background text */
+
+    .contact_bg_text{
+        font-size: 5rem;
+
+        letter-spacing: 6px;
+        gap: 0;
+        top: 20px;
+
+        transform: translateX(-50%);
+    }
+
+    /* container */
+
+    .contact_container{
+        width: 100%;
+        height: auto;
+
+        flex-direction: column;
+
+        gap: 40px;
+
+        padding: 40px 20px 20px;
+    }
+
+    /* left */
+
+    .contact_left{
+        width: 100%;
+        height: auto;
+
+        transform: none;
+
+        padding: 20px 18px;
+    }
+
+    .contact_top_icon{
+        width: 70px;
+        height: 55px;
+
+        margin-bottom: 15px;
+    }
+
+    /* form */
+
+    .contact_form{
+        gap: 15px;
+    }
+
+    .contact_form input{
+        height: 52px;
+    }
+
+    .contact_form textarea{
+        height: 130px;
+    }
+
+    .contact_form input,
+    .contact_form textarea{
+        font-size: 14px;
+
+        padding: 14px 16px;
+    }
+
+    .contact_form button{
+        height: 54px;
+
+        font-size: 15px;
+    }
+
+    /* right */
+
+    .contact_right{
+        width: 100%;
+
+        top: 0;
+        left: 0;
+
+        align-items: center;
+
+        text-align: center;
+
+        gap: 25px;
+    }
+
+    .contact_text{
+        font-size: 1.05rem;
+
+        line-height: 1.8;
+
+        letter-spacing: 1px;
+    }
+
+    /* socials */
+
+    .contact_socials{
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 22px;
+    }
+
+    /* datetime */
+
+    .contact_datetime{
+        align-items: center;
+
+        font-size: 0.85rem;
+    }
+
+    /* thanks section */
+
+    .thanks_section{
+        max-height: none;
+        padding: 20px 15px 25px;
+    }
+
+    .thanks_text{
+        font-size: 1.5rem;
+        margin-top: 45px;
+        letter-spacing: 3px;
+        color: rgba(255,255,255,0.6);
+    }
+
+    .copyright{
+        font-size: 0.6rem;
+        letter-spacing: 2px;
+        margin-top: 10px;
+    }
+
+    /* home button */
+
+    .home_btn{
+        width: 42px;
+        height: 42px;
+
+        top: 10px;
+
+        left: 50%;
+        transform: translateX(-50%);
+
+        right: auto;
+        z-index: 50;
+    }
+    .home_btn img{
+        width: 18px;
+    }
+
+    /* glass rect */
+
+    .glass_rect{
+        width: 95%;
+
+        left: 50%;
+
+        transform: translateX(-50%);
+
+        top: 60px;
+        z-index: 1;
+        height: 32px;
+      
+    }
+
+}
