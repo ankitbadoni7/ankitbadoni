@@ -563,7 +563,7 @@
         transform: translate(-50%, -50%);
 
         width: clamp(80%, 50vw, 85%);
-        height: clamp(65px, 7vw, 95px);
+        height: clamp(65px, 7vw, 120px);
 
         cursor: default;
 
@@ -606,11 +606,11 @@
 
 
 
-@media(min-width:540px) and (max-width:1000px) {
+@media(min-width:440px) and (max-width:1000px) {
   .hero_glass{
        width: clamp(60%, 50vw, 85%);
-        height: clamp(30px, 6vw, 95px);
-        top:40%;
+        height: clamp(20px, 6vw, 95px);
+        top:28%;
         z-index: 2;
         left: 50%;
         transform: translateX(-50%);
