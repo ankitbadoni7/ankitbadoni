@@ -2,7 +2,7 @@
 /* ===== ABOUT SECTION ===== */
 .about{
     position: relative;
-    max-height: 95vh;
+    max-height: unset;
     overflow: hidden;
 
     background: linear-gradient(
