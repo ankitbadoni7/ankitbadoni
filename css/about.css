@@ -5,10 +5,10 @@
     max-height: 95vh;
     overflow: hidden;
 
-    background: linear-gradient(
+     background: linear-gradient(
         180deg,
         #020A0C 0%,
-        #10c0df 50%,
+        #041F24 50%,
         #020A0C 100%
     );
 }
@@ -106,7 +106,9 @@ background-size: 120px 120px;
     gap: 50px; 
     flex-wrap: nowrap;
     width: 100%;
+    margin-bottom: 40px;
 }
+
 
 .about_socials {
     display: flex;
@@ -940,6 +942,7 @@ background-size: 120px 120px;
         gap: 30px;
 
         margin-top: 35px;
+        margin-bottom: 30px;
     }
 
     .about_socials{
