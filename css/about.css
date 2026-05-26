@@ -2,7 +2,7 @@
 /* ===== ABOUT SECTION ===== */
 .about{
     position: relative;
-    max-height: unset;
+    max-height: 95vh;
     overflow: hidden;
 
     background: linear-gradient(
@@ -47,9 +47,10 @@ background-size: 120px 120px;
 .about_container{
     width: 100%;
     max-width: 1200px;
+     padding-top: 80px;
     margin: 0 auto;
 
-    min-height: 100vh;
+    min-height: unset;
 
     display: flex;
     align-items: flex-end;
@@ -900,6 +901,7 @@ background-size: 120px 120px;
         justify-content: center;
 
         gap: 40px;
+        padding-top: 0;
     }
 
     .about_left{
