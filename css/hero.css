@@ -40,6 +40,10 @@
   filter: blur(100px);
 }
 
+
+
+
+
 .hero > * {
   position: relative;
   z-index: 1;
