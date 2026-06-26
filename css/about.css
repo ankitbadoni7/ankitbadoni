@@ -377,8 +377,8 @@ background-size: 120px 120px;
 
 .exp_card {
     position: absolute;
-    width: 100%;
-    max-height: 310px;
+    width: 120%;
+    max-height: 330px;
 
     background: rgba(5, 8, 10, 0.96); 
     border: 1px solid rgba(0, 255, 200, 0.25);
@@ -386,7 +386,6 @@ background-size: 120px 120px;
     border-radius: 14px;
 
     padding: 14px 28px;
-
     box-shadow:
         0 18px 50px rgba(0, 0, 0, 0.75),
         inset 0 1px 0 rgba(255, 255, 255, 0.04);
@@ -410,7 +409,135 @@ background-size: 120px 120px;
     
 
 }
+.career_timeline{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
 
+/* LEFT & RIGHT EXPERIENCE */
+.career_item{
+    flex: 1.2;
+    text-align: left;
+}
+
+.career_item img{
+    max-width: 110px;
+    height: auto;
+    margin-bottom: 12px;
+}
+
+.career_item h3{
+    font-size: 1rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.career_item h4{
+    font-size: .9rem;
+    opacity: .7;
+    margin: 4px 0;
+}
+
+.career_item span{
+    display: block;
+    font-size: .85rem;
+    opacity: .6;
+}
+
+.career_item ul{
+    margin-top: 12px;
+    padding-left: 16px;
+    list-style: disc;
+    text-align: left;
+}
+
+.career_item li{
+    font-size: .85rem;
+    opacity: .8;
+    margin-bottom: 8px;
+}
+
+/* ========================= */
+/*        MIDDLE BLOCK       */
+/* ========================= */
+
+.career_middle{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transform: translateX(-20px);
+}
+
+/* MCA CARD */
+
+.career_mca{
+    flex: 0 0 140px;   
+    width: 110px;
+    padding: 10px 8px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    border-radius: 12px;
+    background: rgba(255,255,255,.04);
+    border: 1px solid rgba(0,255,213,.25);
+}
+
+
+.career_mca h3{
+    color: #00ffd5;
+}
+
+.career_mca p{
+    font-size: .9rem;
+    opacity: .8;
+    margin: 4px 0;
+}
+
+.career_mca span{
+    font-size: .8rem;
+    opacity: .6;
+}
+.career_line_left{
+    margin-right: 12px; 
+}
+.carrer_line_right{
+    margin-left: 12px; 
+}
+
+/* TIMELINE */
+
+.career_line{
+    width: 50px;
+    height: 2px;
+    background: #00ffd5;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0,255,213,.8);
+}
+
+.career_line::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    transform: translateY(-50%);
+
+    width: 10px;
+    height: 10px;
+
+    background: #00ffd5;
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 8px #00ffd5,
+        0 0 16px rgba(0,255,213,.8);
+}
 /* ===== TOP BAR ===== */
 .exp_title {
     font-size: 2rem;
@@ -431,72 +558,13 @@ background-size: 120px 120px;
 .exp_divider {
     border: none;
     height: 1px;
-    background: rgba(255, 255, 255, 0.15);
+     background: linear-gradient(
+        to right,
+        transparent,
+        rgba(0,255,213,.4),
+        transparent
+    );
     margin: 1px 0 5px;
-}
-
-/* ===== HEADER ===== */
-.exp_header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 10px;
-}
-.exp_info{
-    line-height: 1.5;
-}
-.exp_info h3{
-    font-size: 1.3rem;
-   font-weight: 400;
-   letter-spacing: 2px;
-}
-
-.exp_info h4{
-   opacity: 0.7;
-   font-size: 1.1rem;
-   font-weight: 400;
-   letter-spacing: 1px;
-
-}
-.exp_info .exp_date{
-     font-size: 1.1rem;
-    opacity: 0.6;
-    font-family: var(--font-body);
-}
-
-
-/* LOGO */
-.exp_logo img {
-    height: auto;
-    max-width: 200px;
-    filter: drop-shadow(0 0 10px rgba(0,0,0,1));
-}
-
-/* ===== LIST ===== */
-.exp_list {
-
-    list-style: none;
-    padding: 0;
-}
-
-.exp_list li {
-    position: relative;
-    padding-left: 18px;
-    line-height: 1.6;
-    font-weight: 300;
-}
-
-.exp_list li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 8px;
-
-    width: 6px;
-    height: 6px;
-
-    background: #00ffd5;
-    border-radius: 50%;
 }
 
 
